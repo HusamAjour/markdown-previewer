@@ -1,6 +1,40 @@
-# Getting Started with Create React App
+# Markdown Previewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
+
+This project is part of the freeCodeBootcamp Front End Development Libraries curriculum as a certification project.
+
+In this project, I practiced some front end technologies, libraries and skills such as using React, Bootstrap, React hooks, React context, and other things.
+
+## Technologies and Libraries
+
+### Bootstrap
+
+I thought of this project as an opportunity to practice `Bootstrap` with React. I used various of ready components and Bootstrap ready-to-use styles.
+
+### React Context
+
+I managed to practice the concept of `React Context` to use shared state between components instead of using props drill. In this project.
+
+### React Hooks
+
+I used React hooks in this project such as `useState`, `useEffect`, `useContext` in addition to custom hooks such as `useMarkdown` and `useMarkdownUpdate`.
+
+### react-markdown
+
+I used the [react-markdown](https://github.com/remarkjs/react-markdown) package to preview markdown that typed by the user.
+
+## Links
+
+* [Github](https://github.com/HusamAjour/markdown-previewer)
+* [Live](https://markdown-previewer.husamajour.dev/)
+
+## Author Contact
+
+* [Email](husamaj278@gmail.com)
+* [Github](https://github.com/HusamAjour)
+* [LinkedIn](https://www.linkedin.com/in/husamajour)
+* [Twitter](https://twitter.com/HusamAjour)
 
 ## Available Scripts
 
