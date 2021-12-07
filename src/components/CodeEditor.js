@@ -16,9 +16,7 @@ function CodeEditor(props) {
   const updateMarkdown = useMarkdownUpdate();
   const markdownText = useMarkdown();
   const copyToClipboard = () => {
-    console.log(markdownText);
     navigator.clipboard.writeText(markdownText);
-    console.log(navigator.clipboard);
   };
   return (
     <>
