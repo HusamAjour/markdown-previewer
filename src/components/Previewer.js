@@ -2,7 +2,6 @@ import React from "react";
 import { useMarkdown } from "../context/MarkdownProvider";
 import { marked } from "marked";
 
-import ReactMarkdown from "react-markdown";
 marked.use({ gfm: true, breaks: true });
 
 function Previewer(props) {

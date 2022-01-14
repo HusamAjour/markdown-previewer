@@ -27,7 +27,7 @@ function CodeEditor(props) {
     if (inputRef.current) {
       updateMarkdownOnRender(inputRef);
     }
-  }, []);
+  }, [updateMarkdownOnRender]);
 
   return (
     <>
