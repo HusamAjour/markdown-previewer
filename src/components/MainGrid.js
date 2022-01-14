@@ -32,7 +32,7 @@ function MainGrid() {
           </p>
         </Col>
       </Row>
-      <Row style={{ minHeight: "100vh" }}>
+      <Row sm={2} style={{ minHeight: "100vh" }}>
         <Col sm style={{ minHeight: "100%" }}>
           <CodeEditor />
         </Col>

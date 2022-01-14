@@ -1,10 +1,16 @@
 import React from "react";
 import { useMarkdown } from "../context/MarkdownProvider";
+import { marked } from "marked";
 
 import ReactMarkdown from "react-markdown";
+marked.use({ gfm: true, breaks: true });
 
 function Previewer(props) {
-  const markdownText = useMarkdown();
+  const markdown = useMarkdown();
+  const getMarkdownText = () => {
+    var rawMarkup = marked.parse(markdown);
+    return { __html: rawMarkup };
+  };
   return (
     <>
       <div
@@ -25,9 +31,11 @@ function Previewer(props) {
             padding: ".375rem .75rem",
           }}
         >
-          <div id="preview" className="word-break">
-            <ReactMarkdown children={markdownText} className="react-markdown" />
-          </div>
+          <div
+            id="preview"
+            className="word-break react-markdown"
+            dangerouslySetInnerHTML={getMarkdownText()}
+          ></div>
         </div>
       </div>
     </>

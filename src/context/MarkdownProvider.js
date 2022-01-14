@@ -13,12 +13,22 @@ export function useMarkdownUpdate() {
 
 export function MarkdownProvider({ children }) {
   const [markdown, setMarkdown] = useState("");
+
   const updateMarkdown = (e) => {
     setMarkdown(e.target.value);
   };
+
+  const updateMarkdownOnRender = (ref) => {
+    console.log("inside updateMarkdownOnRender");
+    console.log(ref);
+    setMarkdown(ref.current.value);
+  };
+
   return (
     <MarkdownContext.Provider value={markdown}>
-      <MarkdownUpdateContext.Provider value={updateMarkdown}>
+      <MarkdownUpdateContext.Provider
+        value={{ updateMarkdown, updateMarkdownOnRender }}
+      >
         {children}
       </MarkdownUpdateContext.Provider>
     </MarkdownContext.Provider>
